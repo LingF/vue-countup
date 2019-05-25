@@ -1,7 +1,9 @@
 # vue-simple-countup
 
 > 用vue简单封装的 CountUp.js
+
 > 简单易用、追踪了目标值变化、添加自动启动；支持 CountUp.js 的大部分选项
+
 > Vue.js component wrap for CountUp.js
 
 ## Installation
@@ -30,7 +32,7 @@ export default {
   },
   data() {
     return {
-      endVal: 2019
+      endVal: 5555
     }
   },
   methods: {
@@ -47,8 +49,18 @@ export default {
 | -----------------  | ---------------- | :--------: | :----------: |
 | auto | autostart | Boolean | `false` |
 | smartEasingThreshold/smartEasingAmount/easingFn/formattingFn/numerals | | | *not support* |
+| smartEasingThreshold/smartEasingAmount/easingFn/formattingFn/numerals | | | *not support* |
 
 more options see [countUp.js#Options](https://github.com/inorganik/countUp.js#Options) 
+
+### Not Support Options
+| Property | Description | type |	default	|
+| -----------------  | ---------------- | :--------: | :----------: |
+| smartEasingThreshold | | | *not support* |
+| smartEasingAmount | | | *not support* |
+| easingFn | | | *not support* |
+| formattingFn | | | *not support* |
+| numerals | | | *not support* |
 
 ## Methods
 | Method Name | Description | Example |
