@@ -1,10 +1,9 @@
 {
-  "name": "vue-countup",
+  "name": "vue-simple-countup",
   "description": "A Vue Component",
-  "version": "0.0.1",
-  "author": "lingF",
+  "version": "1.0.0",
+  "author": "lingf",
   "license": "MIT",
-  "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
