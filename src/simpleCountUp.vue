@@ -6,7 +6,7 @@
 import props from './props';
 import { CountUp } from 'countup.js';
 export default {
-  name: 'countup-demo',
+  name: 'simple-countup',
   props: {
     value: {
       type: Number,
