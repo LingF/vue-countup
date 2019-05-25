@@ -1,5 +1,7 @@
 # vue-simple-countup
 
+> 用vue简单封装的 CountUp.js
+> 简单易用、追踪了目标值变化、添加自动启动；支持 CountUp.js 的大部分选项
 > Vue.js component wrap for CountUp.js
 
 ## Installation
@@ -11,7 +13,7 @@ $ npm install --save vue-simple-countup
 ## Usage
 
 ```html
-  <simple-count-up v-modle="endVal" :auto="!0"></simple-count-up>
+<simple-count-up ref="myCountUp" v-modle="endVal" :auto="!0"></simple-count-up>
 ```
 
 ```javascript
@@ -44,17 +46,14 @@ export default {
 | Property | Description | type |	default	|
 | -----------------  | ---------------- | :--------: | :----------: |
 | auto | autostart | Boolean | `false` |
-| smartEasingThreshold | | | *not support* |
-| smartEasingAmount | | | *not support* |
-| easingFn | | | *not support* |
-| formattingFn | | | *not support* |
-| numerals | | | *not support* |
-more see [countUp.js#Options](https://github.com/inorganik/countUp.js#Options) 
+| smartEasingThreshold/smartEasingAmount/easingFn/formattingFn/numerals | | | *not support* |
+
+more options see [countUp.js#Options](https://github.com/inorganik/countUp.js#Options) 
 
 ## Methods
-| Method Name | Description |
-| :--------: | ----- |
-| start | start the countUp |
-| pauseResume | pause/resume the countUp |
-| update | update value |
-| reset | reset the countUp |
+| Method Name | Description | Example |
+| :--------: | ----- | ----- |
+| start | start the countUp | simpleCountUp.start(completeMethod) |
+| pauseResume | pause/resume the countUp | simpleCountUp.pauseResume() |
+| update | update value | simpleCountUp.update(6666) |
+| reset | reset the countUp | simpleCountUp.reset() |
