@@ -14,7 +14,7 @@ $ npm install --save vue-simple-countup
 ## Usage
 
 ```html
-<simple-count-up ref="myCountUp" v-modle.number="endVal" :auto="!0"></simple-count-up>
+<simple-count-up ref="myCountUp" v-model.number="endVal" :auto="!0"></simple-count-up>
 ```
 
 ```javascript
